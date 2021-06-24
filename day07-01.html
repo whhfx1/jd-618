@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.box {
+				width: 1480px;
+				height: 1800px;
+				margin: 0 auto;
+				background: #f4f4f4;
+				position: relative;
+			}
+			
+			.box .box1 {
+				width: 1480px;
+				height: 830px;
+				
+				margin: 0 auto;
+				
+			}
+			
+			li {
+				list-style: none;
+			}
+			
+			.box1 .pox {
+				width: 288px;
+				height: 400px;
+				float: left;
+				margin-left: 6px;
+				margin-bottom: 6px;
+			}
+			
+			.pox {
+				width: 288px;
+				height: 400px;
+				background-color: #CCCCCC;
+				margin: 0 auto;
+				background: url(images/sprite.png) no-repeat;
+				background-size: 864px 800px;
+				background-position: -576px 0;
+				overflow: hidden;
+			}
+			
+			.pox .bt h2 {
+				width: 130px;
+				height: 40px;
+				text-align: center;
+				line-height: 40px;
+				background: red;
+				border-radius: 20px;
+				margin: 22px auto 40px;
+				color: white;
+			}
+			
+			.pox .list>div {
+				width: 108px;
+				border: 1px #ffe1e8 solid;
+				height: 46px;
+				text-align: center;
+				line-height: 46px;
+				margin-bottom: 14px;
+				border-radius: 10px;
+				color: #c81621;
+				float: left;
+			}
+			
+			.pox .list>div:nth-child(2n+1) {
+				margin-left: 30px;
+			}
+			
+			.pox .list>div:nth-child(2n) {
+				margin-right: 30px;
+				margin-bottom: 14px;
+				float: right;
+			}
+			.pox .list>div:hover{
+				background: red;
+				color: #fff;
+}
+			
+			.list li {
+				width: 288px;
+				height: 400px;
+				background: white;
+				float: left;
+				margin-left: 6px;
+				margin-bottom: 6px;
+				position: relative;
+			}
+			
+			li img {
+				width: 188px;
+				height: 188px;
+				margin-top: 40px;
+				margin-left: 50px;
+			}
+			
+			p {
+				display: block;
+				margin-left: 28px;
+				margin-top: 46px;
+				line-height: 30px;
+				font-size: 18px;
+			}
+			
+			li .cha {
+				position: absolute;
+				right: 20px;
+				top: 20px;
+				display: none;
+			}
+			
+			li:hover .cha {
+				display: block;
+			}
+			
+			li:hover .btn {
+				display: block;
+			}
+			
+			li>.btn {
+				width: 290px;
+				height: 60px;
+				background: rgba(250, 250, 250, 0.5);
+				position: absolute;
+				left: 0;
+				top: 300px;
+				display: none;
+			}
+			
+			li .btn .same {
+				width: 160px;
+				height: 40px;
+				position: absolute;
+				background: #333;
+				bottom: 3px;
+				margin-left: 60px;
+				display: none;
+				border-radius: 20px;
+				color: white;
+				text-align: center;
+				line-height: 40px;
+				text-decoration: none;
+				display: none;
+			}
+			
+			li:hover .same {
+				display: block;
+			}
+			
+			li span {
+				color: red;
+				font-weight: bold;
+			}
+			
+			.ws {
+				color: black;
+				font-weight: normal;
+			}
+			
+			.money {
+				"font-size: 12px;"
+			}
+			
+			.box2 {
+				width: 80px;
+				height: 700px;
+				background: #FFFFFF;
+				position: fixed;
+				left: 50%;
+				top: 8px;
+				margin-left: 745px;
+			}
+			
+			.box2 .c1 {
+				width: 80px;
+				height: 75px;
+				text-align: center;
+				padding-top: 22px;
+				font-size: 20px;
+			}
+			
+			.box2 .c2 {
+				width: 80px;
+				height: 75px;
+			}
+			
+			.box2 .c3 {
+				width: 80px;
+				height: 75px;
+				color: red;
+				text-align: center;
+				padding-top: 22px;
+				font-size: 20px;
+			}
+			
+			.box2 .c4 {
+				width: 80px;
+				height: 75px;
+				font-size: 20px;
+				text-align: center;
+			}
+			
+			.box2 .c5 {
+				width: 80px;
+				height: 75px;
+				font-size: 20px;
+				text-align: center;
+				color: red;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="box">
+			<div class="box1">
+				<div class="pox">
+					<div class="bt">
+						<h2>精选热点</h2>
+					</div>
+					<div class="list">
+						<div class="a">手表</div>
+						<div class="b">电磁炉</div>
+						<div>手机支架</div>
+						<div>休闲鞋</div>
+						<div>苹果</div>
+						<div>儿童玩具</div>
+						<div>玩具</div>
+						<div>微波炉</div>
+
+					</div>
+				</div>
+				<ul class="list">
+					<!--<li ><img src="../../day05作业/作业01/作业01.png"/></li>-->
+					<li><img src="images/1.jpg" />
+						<p>有品公馆&nbsp;餐桌&nbsp;意式轻奢岩板<br/><span class="ws">餐桌椅组合意式后现代简约</span></p>
+						<div class="btn">
+							<a class="same" href="">找相似</a>
+						</div>
+						<div class="cha">×</div>
+					</li>
+
+					<li>
+						<img src="images/2.jpg" />
+						<p>家用袋盖过滤水杯耐热茶水分<br/><span class="ws">离茶杯办公泡茶玻璃杯男花...</sapn><br/>
+						<span>￥108.</span><span class="money">00</span>
+						</p>
+						<div class="btn">
+							<a class="same" href="">找相似</a>
+						</div>
+						<div class="cha">×</div>
+					</li>
+					<li>
+						<img src="images/3.jpg" />
+						<p>自营悦诗风吟 Innisfree 第四<br/><span class="ws">代小绿瓶受损屏障维护强韧...</span><br/>
+							<span>￥199.</span><span class="money">00</span>
+						</p>
+						<div class="btn">
+							<a class="same" href="">找相似</a>
+						</div>
+						<div class="cha">×</div>
+					</li>
+					<li>
+						<img src="images/4.jpg" />
+						<p>简约创意现在客厅水果北欧i<br/><span class="ws">ns轻奢水晶玻璃果盘家用零...</span><br/>
+							<span>￥233.</span><span class="money">00</span>
+						</p>
+						<div class="btn">
+							<a class="same" href="">找相似</a>
+						</div>
+						<div class="cha">×</div>
+					</li>
+					<li>
+						<img src="images/5.jpg" />
+						<p>缝纫机家用迷你小型全自动多<br/><span class="ws">功能吃厚手持台式电动缝衣...</span><br/>
+							<span>￥193.</span><span class="money">00</span>
+						</p>
+						<div class="btn">
+							<a class="same" href="">找相似</a>
+						</div>
+						<div class="cha">×</div>
+					</li>
+					<li>
+						<img src="images/6.jpg" />
+						<p>不锈钢盆304食品级家用烘培<br/><span class="ws">打蛋盆特厚加深厨房洗菜盆...</span><br/>
+							<span>￥145.</span><span class="money">00</span>
+						</p>
+						<div class="btn">
+							<a class="same" href="">找相似</a>
+						</div>
+						<div class="cha">×</div>
+					</li>
+					<li>
+						<img src="images/7.jpg" />
+						<p>20/25cm欧式夹缝收纳柜抽屉<br/><span class="ws">式厨房缝隙置物架超窄卫生...</span><br/>
+							<span>￥125.</span><span class="money">00</span>
+						</p>
+						<div class="btn">
+							<a class="same" href="">找相似</a>
+						</div>
+						<div class="cha">×</div>
+					</li>
+					<li>
+						<img src="images/8.jpg" />
+						<p>日系创意过滤塑料杯便携简约<br/><span class="ws">外出小水杯个性网红健身运...</span><br/>
+							<span>￥44.</span><span class="money">00</span>
+						</p>
+						<div class="btn">
+							<a class="same" href="">找相似</a>
+						</div>
+						<div class="cha">×</div>
+					</li>
+					<li>
+						<img src="images/9.jpg" />
+						<p>一次性豆浆杯纸杯带盖加厚粥<br/><span class="ws">杯打包白现磨家用商用批发1...</span><br/>
+							<span>￥34.</span><span class="money">00</span>
+						</p>
+						<div class="btn">
+							<a class="same" href="">找相似</a>
+						</div>
+						<div class="cha">×</div>
+					</li>
+
+				</ul>
+			</div>
+			<div class="box2">
+				<div class="c1">京东<br>秒杀——</div>
+				<div class="c2"><img src="images/618.jpg" width="80px" height="75px" /></div>
+				<div class="c1">特色<br>优选——</div>
+				<div class="c1">频道<br>广场——</div>
+				<div class="c3">为你<br>推荐——</div>
+				<div class="c4"><img src="images/xl.jpg" width="40px" height="40px" /><br>客服——</div>
+				<div class="c4"><img src="images/qb.jpg" width="40px" height="40px" /><br>反馈——</div>
+				<div class="c5"><img src="images/arr.jpg" width="40px" height="40px" /><br>顶部</div>
+			</div>
+		</div>
+	</body>
+
+</html>
